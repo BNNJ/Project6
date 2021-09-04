@@ -5,8 +5,10 @@
   "main": "fetch.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "ocm-env": "cd OCMovies-API && python3 -m venv env && pip install -r requirements.txt && cd ../",
-    "ocm-server": "source OCMovies-API/env/bin/activate && python3 OCMovies-API/manage.py runserver",
+    "init-submodule": "git submodule init; git submodule update;",
+    "init-env": "cd OCMovies-API && python3 -m venv env && source env/bin/activate && pip install -r requirements.txt && python manage.py create_db && cd ../",
+    "init": "npm run init-submodule; npm run init-env",
+    "ocm-server": "source OCMovies-API/env/bin/activate && python OCMovies-API/manage.py runserver",
     "watch-sass": "sass --watch ./sass/main.scss:main.css"
   },
   "author": "",
