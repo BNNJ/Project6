@@ -1,0 +1,18 @@
+
+:root {
+	font-family: "Lucida Console", "Courier New", monospace;
+}
+
+body {
+	// width: 1100px;
+	// background: linear-gradient(to right, color(root_bg), color(main_bg), color(root_bg));
+	background-color: color(root_bg);
+	user-select: none;
+}
+
+.main {
+	width: 1024px;
+	padding: 15px 40px 15px 40px;
+	margin: 0 auto;
+	background-color: color(main_bg);
+}

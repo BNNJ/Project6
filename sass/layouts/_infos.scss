@@ -1,0 +1,32 @@
+
+.infos {
+	margin: 0 auto;
+	// border: color(border_modal) solid 2px;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	&__content {
+		background: linear-gradient(to right, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.4));
+		padding: 20px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		&__desc {
+			padding-right: 20px;
+			color: color(desc_text);
+			& > p {
+				text-align: justify;
+				margin-top: 10px;
+				margin-bottom: 10px;
+				padding: 0;
+			}
+			& > h2, h1 {
+				margin: 0;
+				padding: 0;
+			}
+		}
+		& .image {
+			border: color(border_image) solid 2px;
+		}
+	}
+}

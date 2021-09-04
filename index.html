@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>OC Movies</title>
+	<link rel="stylesheet" href="main.css">
+ </head>
+<body>
+	<div class="main">
+		<div class="header">
+			<p>search</p>
+			<p>menu</p>
+			<p>settings</p>
+			<p>logout</p>
+		</div>
+	
+		<div class="infos" id="highlight" data-mode="random">
+			<div class="infos__content">
+				<div class="infos__content__desc"></div>
+				<img class="image">
+			</div>
+		</div>
+
+		<div class="category" id="best" data-counter="0">
+			<h1 class="title"></h1>
+			<div class="carousel">
+				<span class="carousel__navbtn" onclick="move('best', 1)">&lt;</span>
+				<div class="carousel__gallery"></div>
+				<span class="carousel__navbtn" onclick="move('best', -1)">&gt;</span>
+			</div>
+		</div>
+		<div class="category" id="cat1" data-counter="0">
+			<h1 class="title"></h1>
+			<div class="carousel">
+				<span class="carousel__navbtn" onclick="move('cat1', 1)">&lt;</span>
+				<div class="carousel__gallery"></div>
+				<span class="carousel__navbtn" onclick="move('cat1', -1)">&gt;</span>
+			</div>
+		</div>
+		<div class="category" id="cat2" data-counter="0">
+			<h1 class="title"></h1>
+			<div class="carousel">
+				<span class="carousel__navbtn" onclick="move('cat2', 1)">&lt;</span>
+				<div class="carousel__gallery"></div>
+				<span class="carousel__navbtn" onclick="move('cat2', -1)">&gt;</span>
+			</div>
+		</div>
+		<div class="category" id="cat3" data-counter="0">
+			<h1 class="title"></h1>
+			<div class="carousel">
+				<span class="carousel__navbtn" onclick="move('cat3', 1)">&lt;</span>
+				<div class="carousel__gallery"></div>
+				<span class="carousel__navbtn" onclick="move('cat3', -1)">&gt;</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal">
+		<div class="modal__content infos">
+			<div class="infos__content">
+				<div class="infos__content__desc"></div>
+				<img class="image">
+			</div>
+			<!-- <span class="modal__content--close">&times</span> -->
+		</div>
+	</div>
+
+	<script src="fetch.js"></script>
+	<script src="modal.js"></script>
+	<script src="carousel.js"></script>
+	<script>
+		render()
+		add_listener()
+	</script>
+</body>
+
+</html> 

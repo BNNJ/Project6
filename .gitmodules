@@ -1,0 +1,3 @@
+[submodule "OCMovies-API"]
+	path = OCMovies-API
+	url = https://github.com/OpenClassrooms-Student-Center/OCMovies-API-EN-FR

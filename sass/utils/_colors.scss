@@ -1,0 +1,34 @@
+
+$colors: (
+	root_bg: #272727,
+	header_bg: #151515,
+	main_bg: white,
+	carousel_bg: #151515,
+	border_modal: white,
+	border_image: white,
+	desc_text: white,
+	category_title: black,
+	button: white,
+	button_text: black,
+	navbtn: white,
+	navbtn_hover: red,
+	closebtn: white,
+	closebtn_hover: red,
+);
+
+$palettes: ();
+
+@each $name, $color in $colors {
+	$map: (
+		$name: (
+			base: $color,
+			dark: darken($color, 30%),
+			light: lighten($color, 15%)
+		)
+	);
+	$palettes: map-merge($palettes, $map);
+}
+
+@function color($color-name, $theme:base) {
+	@return map-get($palettes, $color-name, $theme);
+}

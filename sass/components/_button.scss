@@ -1,0 +1,21 @@
+
+.button {
+	display: inline-block;
+	margin-top: 10px;
+	width: 100px;
+	height: 30px;
+	background-color: color(button);
+	color: color(button_text);
+	cursor: pointer;
+	& > p {
+		position: relative;
+		top: -8px;
+		left: 20px;
+	}
+	&:hover {
+		transform: scale(1.05);
+		& > p {
+			font-weight: bold;
+		}
+	}
+}

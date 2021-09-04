@@ -1,0 +1,19 @@
+.header {
+	display: flex;
+	background-color: color(header_bg);
+	color: white;
+	height: 25px;
+	margin-bottom: 10px;
+	justify-content: flex-end;
+	& > p {
+		margin-left: 10px;
+		margin-right: 10px;
+		position: relative;
+		bottom: 12px;
+		cursor: pointer;
+		&:hover {
+			font-weight: bold;
+		}
+		// vertical-align: top;
+	}
+}

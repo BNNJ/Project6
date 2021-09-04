@@ -1,0 +1,14 @@
+{
+  "name": "project6",
+  "version": "1.0.0",
+  "description": "OCMovies",
+  "main": "fetch.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ocm-env": "cd OCMovies-API && python3 -m venv env && pip install -r requirements.txt && cd ../",
+    "ocm-server": "source OCMovies-API/env/bin/activate && python3 OCMovies-API/manage.py runserver",
+    "watch-sass": "sass --watch ./sass/main.scss:main.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
