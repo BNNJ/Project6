@@ -8,6 +8,8 @@
     "init-submodule": "git submodule init; git submodule update;",
     "init-env": "cd OCMovies-API && python3 -m venv env && source env/bin/activate && pip install -r requirements.txt && python manage.py create_db && cd ../",
     "init": "npm run init-submodule; npm run init-env",
+    "init-env-win": "cd OCMovies-API && python3 -m venv env && .\\env\\Scripts\\activate && pip install -r requirements.txt && python manage.py create_db && cd ../",
+    "init-win": "npm run init-submodule; npm run init-env-win",
     "ocm-server": "source OCMovies-API/env/bin/activate && python OCMovies-API/manage.py runserver",
     "watch-sass": "sass --watch ./sass/main.scss:main.css"
   },
